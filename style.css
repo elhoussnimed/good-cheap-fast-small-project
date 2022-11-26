@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.option {
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    position: relative;
+    margin-inline: auto;
+}
+
+.option span {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    translate: 0 -50%;
+    transition: .3s all ease-in-out;
+}
+
+.option .optionName {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 18px;
+    width: 50px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* Classes Add By JavaScript*/
+
+.option.selected {
+    background-color: rgb(235, 95, 235);
+}
+
+.option.selected span {
+    left: 55px;
+}
